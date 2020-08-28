@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Completo"
+        android:inputType="textCapWords"></EditText>
+
+    <EditText
+        android:id="@+id/etFechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="date"
+        android:maxLines="1"
+        android:onClick="mostrarcalendario" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:inputType="phone"></EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"></EditText>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:lines = "5"
+        android:hint="Descripción Contacto"
+        android:inputType="textMultiLine|textCapSentences"></EditText>
+
+    <Button
+        android:id="@+id/btsiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/siguiente"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.999" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
